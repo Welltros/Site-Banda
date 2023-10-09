@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body{background-image:url(imagens/capa.png) ; font-family: verdana; color: #f5f4f4;}
+#meio{padding-left: 10px; background-color: #000000; width: 500px; margin-left: -250px;
+left: 50%; position: absolute;border: 10px solid; border-color:#848484; border-radius: 10px;}
+.cmp{ width: 300px;}
+.tabelas {border-style: solid; border-radius: 10px;}
+</style>
+</head>
+
+<body background ="black">
+<div id="meio">
+<br/>
+<center>
+<table class="tabelas">
+  <tr>
+    <td><b>FEITO POR:</b></td>
+    <td><i>Wellington Well</i></td>
+    </tr>
+     <tr>
+    <td><b>SITE</b></td>
+   <td><i>www.breakingkerolin.com.br</i></td>
+  </tr>
+</table>
+</center>
+<br/><br/>
+
+1. Informe dados a baixo:
+<form action="processaForm.jsp">
+Nome: <input type="text" name="NOME" required="required" class="cmp">
+<br/>
+Email: <input type="email" name="email" required="required" class="cmp">
+
+<br/><br/>
+Motivo do contato? 
+<br/>
+
+<input type="radio" name="resp" checked="true"> Shows<br>
+<input type="radio" name="resp"> Lojas Virtual<br>
+<input type="radio" name="resp"> Reclamações<br>
+<input type="radio" name="resp"> Outros<br>
+<br/>
+Qual seu estado?<br/>
+<select multiple>
+  <option value="time1"></option>
+  <option value="time2">Rio de Janeiro</option>
+  <option value="time3">São Paulo</option>
+  <option value="time4">Minas Gerais</option>
+  <option value="time5">Goias</option>
+  <option value="time6">Bahia</option>
+  <option value="time7">Outros</option>
+</select>
+
+<br/><br/>
+Mensagem.<br/>
+<textarea name="Texto" cols="55" rows="10">
+Comentários aqui...
+</textarea>
+<br/><br/>
+<input type="submit" value="ENVIAR"> <input type="reset" value="LIMPAR">
+<a href="index.html">
+    <button type="button" class="btn btn-default">Voltar</button>
+</form>
+<br/>
+</div>
+</body>
+</html>
